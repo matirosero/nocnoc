@@ -37,33 +37,33 @@ global $themify;
 		<?php if ( ! is_404() && have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			<div id="page-<?php the_ID(); ?>" class="type-page">
 
-			<div class="page-content entry-content">
+				<div class="page-content entry-content">
 
-				<!-- page-title -->
-				<?php if($themify->page_title != "yes"): ?>
-					
-					<time datetime="<?php the_time( 'o-m-d' ); ?>"></time>
-					<h1 class="page-title"><?php the_title(); ?></h1>
-				<?php endif; ?>
-				<!-- /page-title -->
+					<!-- page-title -->
+					<?php if($themify->page_title != "yes"): ?>
+						
+						<time datetime="<?php the_time( 'o-m-d' ); ?>"></time>
+						<h1 class="page-title"><?php the_title(); ?></h1>
+					<?php endif; ?>
+					<!-- /page-title -->
 
-				<?php if ( $themify->hide_page_image != 'yes' && has_post_thumbnail() ) : ?>
-					<figure class="post-image"><?php themify_image( "{$themify->auto_featured_image}w={$themify->image_page_single_width}&h={$themify->image_page_single_height}&ignore=true" ); ?></figure>
-				<?php endif; ?>
+					<?php if ( $themify->hide_page_image != 'yes' && has_post_thumbnail() ) : ?>
+						<figure class="post-image"><?php themify_image( "{$themify->auto_featured_image}w={$themify->image_page_single_width}&h={$themify->image_page_single_height}&ignore=true" ); ?></figure>
+					<?php endif; ?>
 
-				<?php the_content(); ?>
+					<?php the_content(); ?>
 
-				<?php wp_link_pages(array('before' => '<p class="post-pagination"><strong>'.__('Pages:','themify').'</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
+					<?php wp_link_pages(array('before' => '<p class="post-pagination"><strong>'.__('Pages:','themify').'</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 
-				<?php edit_post_link(__('Edit','themify'), '[', ']'); ?>
+					<?php edit_post_link(__('Edit','themify'), '[', ']'); ?>
 
-				<!-- comments -->
-				<?php if(!themify_check('setting-comments_pages') && $themify->query_category == ""): ?>
-					<?php comments_template(); ?>
-				<?php endif; ?>
-				<!-- /comments -->
+					<!-- comments -->
+					<?php if(!themify_check('setting-comments_pages') && $themify->query_category == ""): ?>
+						<?php comments_template(); ?>
+					<?php endif; ?>
+					<!-- /comments -->
 
-			</div>
+				</div>
 			<!-- /.post-content -->
 
 			</div><!-- /.type-page -->

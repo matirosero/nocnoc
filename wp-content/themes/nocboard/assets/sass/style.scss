@@ -24,7 +24,9 @@ CSS file.
 // @import "base/utilities";
 
 
-// Pinboard theme
+// Pinboard theme styles
+@import "vendor/themify/themify-common";
+@import "vendor/themify/themify-builder-style";
 @import "vendor/themify/pinboard";
 
 // Overrides

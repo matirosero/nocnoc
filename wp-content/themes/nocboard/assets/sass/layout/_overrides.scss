@@ -1,4 +1,8 @@
 .type-page {
 	@extend .post;
-	background: purple;
+	// background: purple;
+}
+
+.page-content {
+	@extend .post-content;
 }
