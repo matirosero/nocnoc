@@ -1,0 +1,40 @@
+.frontend {
+	.cmb-row {
+		padding-bottom: 20px;
+		+ .cmb-type-title {
+			margin-top: 20px;
+			padding-top: 20px;
+			border-top: 1px solid #eee;
+		}
+	}
+	.cmb2-metabox-title {
+		font-size: 1.5rem;
+		font-weight: bold;
+	}
+
+	.cmb-tabs {
+		margin-left: 0;
+		ul.cmb-tab-nav {
+			margin-top: 30px;
+			li:not(.cmb-tab-active) a {
+				border-right: 1px solid #eee;
+			}
+			li.cmb-tab-active a {
+				border-left: 3px solid color('yellow', 'base');
+			}
+		}
+		
+		+ input[type="submit"] {
+			clear: both;
+			margin-top: 30px;
+		}
+
+		h5 {
+			margin-bottom: 20px;
+		}
+	}
+
+	.cmb-form {
+
+	}
+}
