@@ -38,3 +38,15 @@
 
 	}
 }
+
+.cmb-type-file-list.cmb2-id-noc-frontend-new-project-gallery {
+	.cmb-attach-list {
+		.cmb2-media-item {
+			#noc_frontend_new_project_apartments & {
+				&:nth-child(n+3) {
+					display: none;
+				}
+			}
+		}
+	}
+}
