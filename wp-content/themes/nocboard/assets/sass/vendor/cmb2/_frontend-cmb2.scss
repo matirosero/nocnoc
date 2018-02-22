@@ -23,7 +23,7 @@
 				border-left: 3px solid color('yellow', 'base');
 			}
 		}
-		
+
 		+ input[type="submit"] {
 			clear: both;
 			margin-top: 30px;
@@ -42,8 +42,30 @@
 .cmb-type-file-list.cmb2-id-noc-frontend-new-project-gallery {
 	.cmb-attach-list {
 		.cmb2-media-item {
-			#noc_frontend_new_project_apartments & {
-				&:nth-child(n+3) {
+
+			//Basic
+			#noc_frontend_new_project_apartments &,
+			#noc_frontend_new_project_houses &,
+			#noc_frontend_new_project_lots & {
+				&:nth-child(n+6) {
+					display: none;
+				}
+			}
+
+			//Premium
+			#noc_frontend_new_project_apartments_premium &,
+			#noc_frontend_new_project_houses_premium &,
+			#noc_frontend_new_project_lots_premium & {
+				&:nth-child(n+11) {
+					display: none;
+				}
+			}
+
+			//Super
+			#noc_frontend_new_project_apartments_super &,
+			#noc_frontend_new_project_houses_super &,
+			#noc_frontend_new_project_lots_super & {
+				&:nth-child(n+21) {
 					display: none;
 				}
 			}
