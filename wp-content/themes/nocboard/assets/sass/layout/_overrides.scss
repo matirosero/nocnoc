@@ -7,3 +7,10 @@
 	@extend .post-content;
 }
 
+input[type=reset], input[type=submit], button {
+	background-color: color('blue', 'base');
+	&:hover {
+		// background-color: #333;
+		background-color: color('yellow', 'base');
+	}
+}

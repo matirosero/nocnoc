@@ -1,0 +1,23 @@
+@mixin button {
+	position: relative;
+	line-height: 1rem;
+	color: #fff;
+	background-color: color('blue', 'base');
+
+	padding: .7rem 1.1rem;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 0.9em;
+
+	text-decoration: none;
+	display: inline-block;
+
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+
+	&:hover {
+		// background-color: #333;
+		background-color: color('yellow', 'base');
+		text-decoration: none;
+	}
+}
